@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  width: 1280px;
+  height: 100px;
+  background-color: $site-blue;
+  margin: 100px auto;
+  align-items: center;
+  flex-direction: row;
+  .logo {
+    width: 25%;
+    text-align: center;
+  }
+  .copyright {
+    width: 50%;
+    font-family: Gill;
+    text-align: center;
+    color: $white;
+  }
+  .icons {
+    width: 25%;
+    text-align: center;
+    i {
+      img {
+        width: 23px;
+        height: 23px;
+        fill: $white;
+      }
+    }
+  }
+}

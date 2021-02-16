@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans/GillSans.ttf);
+}
+@font-face {
+  font-family: GillItalic;
+  src: url(fonts/GillSans/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: GillLight;
+  src: url(fonts/GillSans/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: Proxima;
+  src: url(fonts/Mark-Simonson-Proxima-Nova-ScOsf-Extra-Condensed-Thin.otf);
+}
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+.promo-tours {
+  max-width: 818px;
+  height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.promo-tours .promo {
+  padding: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 304px;
+  width: 236px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-family: Proxima;
+}
+.promo-tours .promo .country {
+  font-size: 60px;
+}
+.promo-tours .promo button {
+  margin-top: 57px;
+  height: 40px;
+  width: 133px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #79addc;
+  border: none;
+  font-family: Gill;
+  font-weight: bold;
+  font-size: 15px;
+}
+.promo-tours .tour1 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-01.jpg);
+}
+.promo-tours .tour2 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-02.jpg);
+}
+.promo-tours .tour3 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-03.jpg);
+}
+
+footer {
+  display: flex;
+  width: 1280px;
+  height: 100px;
+  background-color: #79addc;
+  margin: 100px auto;
+  align-items: center;
+  flex-direction: row;
+}
+footer .logo {
+  width: 25%;
+  text-align: center;
+}
+footer .copyright {
+  width: 50%;
+  font-family: Gill;
+  text-align: center;
+  color: #fff;
+}
+footer .icons {
+  width: 25%;
+  text-align: center;
+}
+footer .icons i img {
+  width: 23px;
+  height: 23px;
+  fill: #fff;
+}
+
+.book-form {
+  padding-top: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.book-form form {
+  max-width: 818px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.book-form form p {
+  font-size: 60px;
+  font-family: Proxima;
+}
+.book-form form .top {
+  width: 100%;
+  justify-content: space-between;
+}
+.book-form form .top .left {
+  width: 344px;
+  height: 58px;
+}
+.book-form form .top .right {
+  width: 453px;
+  height: 58px;
+  float: right;
+}
+.book-form form .top input {
+  margin-bottom: 20px;
+  border: 1.5px solid #79addc;
+  font-family: GillLight;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.book-form form .checking {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.book-form form .checking div label {
+  font-size: 18px;
+  float: left;
+  padding-top: 17px;
+  font-family: GillLight;
+  font-weight: bold;
+}
+.book-form form .checking div input {
+  float: right;
+  height: 58px;
+  margin-bottom: 20px;
+  width: 698px;
+  border: 1.5px solid #79addc;
+  font-family: GillLight;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 20px;
+  background-image: url(../images/form/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  background-position: 98% 50%;
+}
+.book-form form .people {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.book-form form .people div {
+  width: 27%;
+  font-family: GillLight;
+  font-weight: bold;
+}
+.book-form form .people div label {
+  float: left;
+  padding-top: 17px;
+  font-size: 18px;
+}
+.book-form form .people div select {
+  float: right;
+  width: 103px;
+  height: 58px;
+  margin-bottom: 20px;
+  border: 1.5px solid #79addc;
+  font-size: 18px;
+}
+.book-form form .message {
+  width: 100%;
+  height: 192px;
+  margin-bottom: 20px;
+  border: 1.5px solid #79addc;
+  font-family: GillLight;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+.book-form form button {
+  width: 813px;
+  height: 61px;
+  color: #fff;
+  background-color: #79addc;
+  border: none;
+  font-family: Gill;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+nav {
+  width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #fff solid 2px;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+}
+nav .links {
+  width: 542px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+}
+nav .links a {
+  text-decoration: none;
+  color: #fff;
+  margin: auto;
+  font-family: Gill;
+  font-size: 15px;
+  border-right: 1px solid #79addc;
+  padding-right: 20px;
+}
+nav .links .no-border {
+  border: none;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 70px;
+  color: #fff;
+  text-align: center;
+  width: 75%;
+}
+.heading .name {
+  font-size: 60px;
+  font-family: Proxima;
+}
+.heading .text {
+  font-size: 20px;
+  font-family: GillItalic;
+}
+.heading button {
+  margin-top: 30px;
+  height: 40px;
+  width: 121.5px;
+  color: white;
+  background-color: #79addc;
+  border: none;
+  font-family: Gill;
+  font-weight: bold;
+  font-size: 15px;
+}
